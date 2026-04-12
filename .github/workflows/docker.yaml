@@ -4,7 +4,7 @@ on:
   push:
     branches:
       - main
-      - muvvaalaakash-ci-pipeline
+      - ci-pipelines
  
 jobs:
   docker-security-scan:
