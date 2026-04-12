@@ -50,11 +50,11 @@ jobs:
         with:
           server_address: ${{ secrets.SMTP_HOST }}
           server_port: ${{ secrets.SMTP_PORT }}
-          username: ${{ secrets.MAIL_USERNAME }}
-          password: ${{ secrets.MAIL_PASSWORD }}
+          username: ${{ secrets.EMAIL_USERNAME }}
+          password: ${{ secrets.EMAIL_PASSWORD }}
           subject: "Docker Vulnerability Report - ${{ github.repository }}"
-          to: ${{ secrets.MAIL_TO }}
-          from: CI Scanner <${{ secrets.MAIL_USERNAME }}>
+          to: ${{ secrets.EMAIL_USERNAME }}
+          from: CI Scanner <${{ secrets.EMAIL_USERNAME }}>
           body: |
             Hi Team,
  
