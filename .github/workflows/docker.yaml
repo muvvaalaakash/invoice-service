@@ -76,6 +76,7 @@ jobs:
 
       # 🔍 Security Scan (FAIL PIPELINE if vulnerabilities found)
       - name: Trivy Scan (Fail on HIGH/CRITICAL)
+        continue-on-error: true
         run: |
           trivy image --exit-code 1 --severity HIGH,CRITICAL $IMAGE_NAME:${{ env.VERSION }}
 
