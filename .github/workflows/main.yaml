@@ -3,6 +3,7 @@ name: SonarQube Scan & Alert
 on:
   push:
     branches:
+      - main
       - ci-pipelines
   pull_request: # Highly recommended
     types: [opened, synchronize, reopened]
